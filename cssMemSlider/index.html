@@ -1,12 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Mem Slider</title>
 </head>
 <body>
-  
+  <div class="wrapper">
+    <div class="container">
+      <div class="slider">
+        <input class="slider__input" type="radio" name="slider" id="slider-1" checked>
+        <input class="slider__input" type="radio" name="slider" id="slider-2">
+        <input class="slider__input" type="radio" name="slider" id="slider-3">
+        <input class="slider__input" type="radio" name="slider" id="slider-4">
+
+        <div class="slider__item">
+          <div class="slider__image">
+            <img src="img/vsej-pravdy-my-ne-znaem.jpg" alt="Не все так однозначно">
+          </div>
+          <div class="slider__image">
+            <img src="img/enot.jpg" alt="Скинь деньги или пушистик умрет">
+          </div>
+          <div class="slider__image">
+            <img src="img/kot-stepan.jpg" alt="Кот Степан">
+          </div>
+          <div class="slider__image">
+            <img src="img/bet-harmon.jpg" alt="Наташа, вставай!">
+          </div>
+        </div>
+        
+        <div class="slider__box">
+          <div class="slider__nav">
+            <label class="slider__btn" for="slider-1" aria-label="1 слайд">
+              <span></span>
+            </label>
+            <label class="slider__btn" for="slider-2" aria-label="2 слайд">
+              <span></span>
+            </label>
+            <label class="slider__btn" for="slider-3" aria-label="3 слайд">
+              <span></span>
+            </label>
+            <label class="slider__btn" for="slider-4" aria-label="4 слайд">
+              <span></span>
+            </label>
+          </div>
+
+          <div class="slider__item-text">
+            <div class="slider__text">
+              <p>Не все так однозначно</p>
+            </div>
+            <div class="slider__text">
+              <p>Скинь деньги или пушистик умрет</p>
+            </div>
+            <div class="slider__text">
+              <p>Кот Степан</p>
+            </div>
+            <div class="slider__text">
+              <p>Наташа, вставай!</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
 </body>
 </html>
