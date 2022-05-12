@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #f0ffff;
+  background-color: #283645;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 727px;
+  padding-top: 150px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+
+.slider__input {
+  display: none;
+}
+
+.slider__item {
+  width: 723px;
+  height: 482px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  border: 2px solid #f0ffff;
+  background-image: url("../img/devushka-krichit-nozhami.jpg");
+  overflow: hidden;
+}
+
+.slider__item-inner {
+  display: flex;
+  transition: margin 0.3s;
+}
+
+.slider__image {
+  width: 723px;
+  flex-shrink: 0;
+}
+
+.slider__image img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  border-radius: 18px;
+}
+
+.slider__box {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.slider__item-text {
+  width: 523px;
+  overflow: hidden;
+}
+
+.slider__text-inner {
+  display: flex;
+  transition: margin 0.3s;
+}
+
+.slider__text {
+  width: 523px;
+  flex-shrink: 0;
+}
+
+.slider__text p {
+  margin: 0;
+}
+
+.slider__nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  width: 200px;
+}
+
+.slider__btn {
+  display: block;
+  padding: 4px;
+  margin: 2px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider__btn span {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #D22856;
+  background-color: #D22856;
+  border-radius: 50%;
+}
+
+.slider__btn:hover span {
+  border-color: #f0ffff;
+  background-color: #f0ffff;
+}
+
+.slider__input:nth-child(1):checked ~ .slider__box .slider__btn:nth-child(1) span,
+.slider__input:nth-child(2):checked ~ .slider__box .slider__btn:nth-child(2) span,
+.slider__input:nth-child(3):checked ~ .slider__box .slider__btn:nth-child(3) span,
+.slider__input:nth-child(4):checked ~ .slider__box .slider__btn:nth-child(4) span,
+.slider__input:nth-child(5):checked ~ .slider__box .slider__btn:nth-child(5) span  {
+  background-color: #283645;
+}
+
+.slider__input:nth-child(2):checked ~ .slider__item .slider__item-inner {
+  margin-left: -723px;
+}
+
+.slider__input:nth-child(3):checked ~ .slider__item .slider__item-inner {
+  margin-left: -1446px;
+}
+
+.slider__input:nth-child(4):checked ~ .slider__item .slider__item-inner {
+  margin-left: -2169px;
+}
+
+.slider__input:nth-child(5):checked ~ .slider__item .slider__item-inner {
+  margin-left: -2892px;
+}
+
+.slider__input:nth-child(2):checked ~ .slider__box .slider__text-inner {
+  margin-left: -523px;
+}
+
+.slider__input:nth-child(3):checked ~ .slider__box .slider__text-inner {
+  margin-left: -1046px;
+}
+
+.slider__input:nth-child(4):checked ~ .slider__box .slider__text-inner {
+  margin-left: -1569px;
+}
+
+.slider__input:nth-child(5):checked ~ .slider__box .slider__text-inner {
+  margin-left: -2092px;
+}
