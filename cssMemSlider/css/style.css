@@ -25,7 +25,7 @@ body {
   max-width: 45.2rem;
   margin-bottom: 2rem;
   border-radius: 1.25rem;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.3);
   border: 0.125rem solid #f0ffff;
   background-image: url("../img/girl-screaming.jpg");
   overflow: hidden;
