@@ -27,7 +27,7 @@ body {
   border-radius: 1.25rem;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
   border: 0.125rem solid #f0ffff;
-  background-image: url("../img/devushka-krichit-nozhami.jpg");
+  background-image: url("../img/girl-screaming.jpg");
   overflow: hidden;
 }
 
@@ -83,7 +83,7 @@ body {
 
 .slider__btn {
   display: block;
-  padding: 0.35rem;
+  padding: 0.4rem;
   cursor: pointer;
 }
 
@@ -99,6 +99,10 @@ body {
 .slider__btn:hover span {
   border-color: #f0ffff;
   background-color: #f0ffff;
+}
+
+.slider__btn:active span {
+  transform: scale(0.85);
 }
 
 .slider__input:nth-child(1):checked ~ .slider__box .slider__btn:nth-child(1) span,
